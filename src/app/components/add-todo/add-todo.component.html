@@ -1,0 +1,11 @@
+<div class="add-todo">
+  <form class="form-inline" [formGroup]="newTodoForm" (ngSubmit)="onSubmit(newTodoForm.value, $event)">
+    <div class="form-group title" [ngClass]="{'has-error': !newTodoForm.controls['newTitle'].valid && newTodoForm.controls['newTitle'].touched}">
+      <input #newTitleInput class="form-control" type="text" [formControl]="newTodoForm.controls['newTitle']" />
+      <div class="error-text label label-danger" *ngIf="!newTodoForm.controls['newTitle'].valid && newTodoForm.controls['newTitle'].touched">Item title is required</div>
+    </div>
+    <div class="form-group controls">
+      <button type="submit" [disabled]="!newTodoForm.valid" class="btn btn-default"><i class="glyphicon glyphicon-plus"></i></button>
+    </div>
+  </form>
+</div>

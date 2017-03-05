@@ -1,0 +1,7 @@
+<div class="list-item" [ngClass]="{'item-done': model.isDone()}">
+  <div class="col-md-8 title" (click)="onItemClick(model)">{{model.title}}</div>
+  <div class="col-md-3 status">{{getStatusName(model.status)}}</div>
+  <div class="col-md-1 controls">
+    <a (click)="onRemoveItemClick(model)"><i class="glyphicon glyphicon-remove"></i></a>
+  </div>
+</div>

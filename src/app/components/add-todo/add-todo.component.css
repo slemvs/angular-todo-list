@@ -1,0 +1,35 @@
+.add-todo{
+    width: 100%;
+    position: relative;
+}
+.add-todo .error-text{
+    position: absolute;
+}
+.add-todo form{
+    width: 100%;
+    letter-spacing: -.36em;
+}
+
+.add-todo form .form-group{
+    letter-spacing: normal;
+    padding-left: 10px;
+}
+.add-todo form .form-group:first-child{
+    padding-left: 0;
+}
+
+.add-todo form .title{
+    width: 86%;
+}
+
+.add-todo form .title input{
+    width: 100%;
+}
+
+.add-todo form .controls{
+    width: 14%;
+}
+.add-todo form .controls button{
+    width: 100%;
+    color: green;
+}

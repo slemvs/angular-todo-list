@@ -1,0 +1,35 @@
+.list-item{
+    line-height: 30px;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    user-select: none;
+}
+.list-item .title{
+    text-align: left;
+    cursor: pointer;
+}
+.list-item.item-done .title{
+    text-decoration: line-through;
+}
+
+.list-item .status{
+    text-align: right;
+    cursor: default;
+    user-select: none;
+}
+.list-item .controls{
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+    user-select: none;
+}
+.list-item .controls a{
+    cursor: pointer;
+    font-size: 125%;
+    line-height: 30px;
+}
+.list-item .controls a i{
+    line-height: 30px;
+    color: red;
+}

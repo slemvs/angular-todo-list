@@ -1,0 +1,13 @@
+.list-title{
+   text-align: center; 
+   font-size: 160%;
+}
+.list{
+    margin: 0 auto;
+    max-width: 100%;
+    width: 400px;
+}
+
+.list .list-content{
+    margin-top: 20px;
+}
